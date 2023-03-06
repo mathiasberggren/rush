@@ -12,5 +12,12 @@ cssparser = "*"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 markup5ever_rcdom = "0.2.0"
 url = "2.3.1"
-cacao = { version = "*", features = ["webview"] }
-lazy_static = "*"
+vulkano = "0.31.0"
+winit = "0.27.3"
+vulkano-win = "0.31.0"
+bytemuck = "1.13.1"
+vulkano-shaders = "0.31.0"
+
+[profile.dev]
+# The purpose of this is to reduce performance artifacts resulting from the default debug optimization.
+opt-level = 1 
